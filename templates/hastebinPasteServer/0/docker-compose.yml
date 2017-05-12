@@ -2,7 +2,6 @@ hastebinServer:
   image: rlister/hastebin
   ports: 
     - "7777:7777"
-  network_mode: "host"
   volumes: 
     - /srv/haste/data:/app/data
   labels:
