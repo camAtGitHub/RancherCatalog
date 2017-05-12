@@ -5,6 +5,13 @@ catalog:
   description: "Pastebin like server"
   minimum_rancher_version: v1.0.0
   minimum_rancher_version: v1.1.99
+  questions:
+    - variable: "hasteListenPort"
+      label: "hastebin HTTP Port"
+      type: "string"
+      required: true
+      default: "7777"
+      description: Default port that hastebin should listen on.
 
 services:
   hastebinServer:
