@@ -1,11 +1,9 @@
-version: '2'
-services:
-  hastebinServer:
-    image: rlister/hastebin
-    ports: 
-      - "7777:7777"
-    network_mode: "host"
-    volumes: 
-      - /srv/haste/data:/app/data
-    labels:
-      io.rancher.scheduler.affinity:host_label: purpose=paste
+hastebinServer:
+  image: rlister/hastebin
+  ports: 
+    - "7777:7777"
+  network_mode: "host"
+  volumes: 
+    - /srv/haste/data:/app/data
+  labels:
+    io.rancher.scheduler.affinity:host_label: purpose=paste

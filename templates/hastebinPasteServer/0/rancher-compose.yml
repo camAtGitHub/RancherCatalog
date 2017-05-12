@@ -1,5 +1,4 @@
-version: '2'
-catalog:
+.catalog:
   name: "hastebinPasteServer"
   version: "v0.1.0"
   description: "Pastebin like server"
