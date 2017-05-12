@@ -1,4 +1,3 @@
-# docker-compose.yml
 version: '2'
 services:
   hastebinServer:
@@ -8,7 +7,5 @@ services:
     network_mode: "host"
     volumes: 
       - /srv/haste/data:/app/data
-## http://docs.rancher.com/rancher/v1.5/en/cattle/scheduling/
-## Make hastebin only run containers on hosts with a purpose=pastie label
     labels:
       io.rancher.scheduler.affinity:host_label: purpose=paste
