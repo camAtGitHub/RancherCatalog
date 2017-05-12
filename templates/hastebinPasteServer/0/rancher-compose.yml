@@ -7,7 +7,7 @@ catalog:
   minimum_rancher_version: v1.1.99
   questions:
     - variable: "hasteListenPort"
-      label: "hastebin HTTP Port"
+      label: "HTTP Port"
       type: "string"
       required: true
       default: "7777"

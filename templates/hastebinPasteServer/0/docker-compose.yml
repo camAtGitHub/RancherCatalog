@@ -4,7 +4,7 @@ services:
   hastebinServer:
     image: rlister/hastebin
     ports: 
-      - "7777:7777"
+      - "hasteListenPort:hasteListenPort"
     network_mode: "host"
     volumes: 
       - /srv/haste/data:/app/data
