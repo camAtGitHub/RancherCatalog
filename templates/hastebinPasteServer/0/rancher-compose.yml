@@ -8,9 +8,9 @@ catalog:
   questions:
     - variable: "hasteListenPort"
       label: "HTTP Port"
-      type: "int"
+      type: "string"
       required: true
-      default: 7777
+      default: "7777"
       description: Default port that hastebin should listen on.
 
 services:
