@@ -1,1 +1,1 @@
-AARnet Rancher Catalog
+Rancher Catalog
