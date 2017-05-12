@@ -1,0 +1,9 @@
+name: hastebin Paste Server
+description: |
+  hastebin paste server is a pastebin type web service.
+  Runs on port 7777
+version: 0 
+category: fun
+maintainer: sysadmin
+license: unknown
+projectURL: https://hastebin.com/about.md
