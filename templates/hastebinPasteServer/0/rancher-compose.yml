@@ -1,4 +1,11 @@
 version: '2'
+catalog:
+  name: "hastebinPasteServer"
+  version: "v0.1.0"
+  description: "Pastebin like server"
+  minimum_rancher_version: v1.0.0
+  minimum_rancher_version: v1.1.99
+
 services:
   hastebinServer:
     scale: 1
