@@ -1,4 +1,5 @@
-.catalog:
+version: '2'
+catalog:
   name: "hastebinPasteServer"
   version: "v0.1.0"
   description: "Pastebin like server"
@@ -7,9 +8,9 @@
   questions:
     - variable: "hasteListenPort"
       label: "HTTP Port"
-      type: "string"
+      type: "int"
       required: true
-      default: "7777"
+      default: 7777
       description: Default port that hastebin should listen on.
 
 services:
