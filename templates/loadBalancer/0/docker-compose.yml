@@ -2,7 +2,7 @@ version: '2'
 services:
   LoadBalancer:
     ports:
-    - 80
+      - 80
     image: rancher/lb-service-haproxy:v0.7.6
     labels:
       io.rancher.scheduler.affinity:host_label: env=prod
