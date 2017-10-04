@@ -1,7 +1,7 @@
 name: hastebin Paste Server HA
 description: |
   hastebin paste server is a pastebin type web service.
-  Runs on port 7777
+  Runs on port 8888
 version: 0 
 category: fun
 maintainer: sysadmin
