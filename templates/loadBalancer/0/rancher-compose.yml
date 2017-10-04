@@ -6,4 +6,5 @@ services:
       port_rules:
         - source_port: 80
           target_port: 7777
-          service: hastebinServer
+          service: hastebinPasteServer-HA/hastebinServer
+          hostname: pastie.aarnet.net.au
