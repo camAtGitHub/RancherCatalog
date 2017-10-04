@@ -11,4 +11,4 @@ services:
     labels:
       io.rancher.scheduler.affinity:host_label: env=prod
 ## If you want to launch a container in only the managed network, you need to add network_mode: none and label io.rancher.container.network=true for the container to be started without the bridge network.
-      io.rancher.container.network=true
+      io.rancher.container.network: true
