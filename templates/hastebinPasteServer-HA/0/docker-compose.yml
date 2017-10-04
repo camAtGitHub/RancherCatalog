@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: '2'
+services:
+  hastebinServer:
+    image: rlister/hastebin
+    network_mode: none
+    volumes: 
+      - /mnt/s3/pastie.aarnet.net.au/data:/app/data
+## http://docs.rancher.com/rancher/v1.5/en/cattle/scheduling/
+## Make hastebin only run containers on hosts with a purpose=pastie label
+    labels:
+      io.rancher.scheduler.affinity:host_label: env=prod
+## If you want to launch a container in only the managed network, you need to add network_mode: none and label io.rancher.container.network=true for the container to be started without the bridge network.
+      io.rancher.container.network=true
