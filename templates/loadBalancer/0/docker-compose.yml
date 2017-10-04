@@ -1,0 +1,11 @@
+version: '2'
+services:
+  LoadBalancer:
+    ports:
+    - 80
+    image: rancher/lb-service-haproxy:v0.7.6
+    labels:
+      io.rancher.scheduler.affinity:host_label: env=prod
+## If you want to launch a container in only the managed network, you need to add network_mode: none and label io.rancher.container.network=true for the container to be started without the bridge network.
+# Run one container on each host
+      io.rancher.scheduler.global: 'true'
