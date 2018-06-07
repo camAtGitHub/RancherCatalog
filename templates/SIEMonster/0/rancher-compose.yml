@@ -1,5 +1,5 @@
 version: '2'
-.catalog:
+catalog:
   name: "SIEMonster V3 Final"
   version: "3.0"
   decription: SIEMonster Stack - SearchGuard Secured.
